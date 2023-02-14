@@ -1,5 +1,5 @@
-export default function Button(){
+export default function Button({removeToDos, id}){
     return (
-        <button className="todo-btn">Ferdig</button>
+        <button onClick={() => removeToDos(id)} className="todo-btn">Ferdig</button>
     )
 }
